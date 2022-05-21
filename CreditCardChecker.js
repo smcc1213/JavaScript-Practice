@@ -85,7 +85,7 @@ const idInvalidCardCompanies = nestedArray => {
   return cardCompaniesArray
 }
 
-const stringToArray = numberString =>{
+const cardStringToArray = numberString =>{
   const numberArray = numberString.split('')
     .map(x => parseInt(x));
   return numberArray;
@@ -100,6 +100,8 @@ console.log(validateCred(mystery3));
 console.log(findInvalidCard(batch));
 //testing for returning the names companies of from a nested array of invalid card numbers
 console.log(idInvalidCardCompanies(batch))
+//testing for converting string to array
+console.log(cardStringToArray('4554322315546884'));
 
 
 
